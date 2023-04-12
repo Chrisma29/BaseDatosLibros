@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="250sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/autor"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et1" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="250sp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/isbn"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="250sp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2" />
+
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="250sp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/precio"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250sp"
+        android:layout_height="75sp"
+        android:backgroundTint="#BE0CFA"
+        android:onClick="guardar"
+        android:text="@string/guardar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="250sp"
+        android:layout_height="75sp"
+        android:backgroundTint="#FFBE0CFA"
+        android:onClick="buscar"
+        android:text="@string/buscar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="250sp"
+        android:layout_height="75sp"
+        android:backgroundTint="#FFBE0CFA"
+        android:onClick="modificar"
+        android:text="@string/modificar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="250sp"
+        android:layout_height="75sp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="eliminar"
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="563dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

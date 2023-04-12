@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BaseDatosLibros</string>
+    <string name="isbn">Introduzca el codigo ISBN</string>
+    <string name="autor">Introduzca el autor</string>
+    <string name="nombre">Introduzca el nombre del libro</string>
+    <string name="precio">Introduzca el precio</string>
+    <string name="guardar">Guardar libro</string>
+    <string name="buscar">Buscar libro</string>
+    <string name="modificar">Modificar datos</string>
+    <string name="eliminar"></string>
+</resources>
